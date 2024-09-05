@@ -79,6 +79,13 @@ func main() {
 		return fmt.Errorf("failed to create main.go: %v", err)
 	}
 
+	err = exec.Command("git", "init", ".").Run()
+	if err != nil {
+		fmt.Printf("Failed to initialize git repository: %v\n", err)
+	} else {
+		fmt.Println("Git repository initialized.")
+	}
+
 	return nil
 }
 
