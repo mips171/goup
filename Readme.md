@@ -13,13 +13,13 @@ Installation
 ## Build
 
 ```bash
-go build -o goup goup.go
+make build
 ```
 
 ## Install
 
 ```bash
-sudo mv goup /usr/local/bin/
+make install
 ```
 
 ## Configuration
